@@ -444,19 +444,19 @@ const looking = {
   services: [
     {
       title: "Appliance Repair & Service",
-      image: "",
+      image: "/air-conditioner.png",
       // category:"salon_for_women",
       modal: "modal1",
     },
     {
       title: "Electrician, Plumber & Carpenters",
-      image: "",
+      image: "/electrician.png",
       // modal:"modal1"
       modal: "modal1",
     },
     {
       title: "Bathroom & Kitchen cleaning",
-      image: "",
+      image: "/kitchen.png",
       // modal:"modal1"//change to
       // modal: "modal1",
       data: [
@@ -479,24 +479,24 @@ const looking = {
     },
     {
       title: "Cleaning",
-      image: "",
+      image: "/Cleaning (1).png",
       modal: "modal1",
     },
     {
       title: "Native Water Purifier",
-      image: "",
+      image: "/water-filter.png",
       // modal: "modal1",
       category:"ro_purchase"
     },
     {
       title: "Native Smart Locks",
-      image: "",
+      image: "/smart-door.png",
       // modal: "modal1",
       category:"epc_stores_smarthome"
     },
     {
       title: "Full Home Painting",
-      image: "",
+      image: "/paint.png",
       // modal: "modal1",
       category:"house_painters"
     },
