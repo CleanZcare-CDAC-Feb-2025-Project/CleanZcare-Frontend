@@ -10,7 +10,6 @@ export const Revenue = () => {
   return (
     <div>
       <UserTable />
-      {/* <UserTable1 data={dummyData} /> */}
     </div>
   );
 };
