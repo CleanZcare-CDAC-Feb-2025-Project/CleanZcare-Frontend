@@ -24,7 +24,7 @@ const looking = {
     services: [
       {
         title: "Appliance Repair & Service",
-        image: "",
+        image: "\air-conditioner.png",
       },
       {
         title: "Electrician, Plumber & Carpenters",
