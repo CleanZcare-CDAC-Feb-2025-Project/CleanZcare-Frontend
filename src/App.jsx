@@ -16,6 +16,9 @@ import { AdminLandingPage } from "./pages/AdminLandingPage.jsx";
 import { AdminUsers } from "./pages/AdminUsers.jsx";
 import { Services } from "./pages/services.jsx";
 import { Revenue } from "./pages/Revanue.jsx";
+import Login from "./pages/Login.jsx";
+import Signup from "./pages/Signup.jsx";
+
 
 function App() {
   const [count, setCount] = useState(0);
@@ -24,6 +27,9 @@ function App() {
     <>
       <Header />
       <Routes>
+      <Route path={"/Login"} element={<Login />} />
+      <Route path={"/Signup"} element={<Signup />} />
+
         <Route path={"/"} element={<Landing />} />
         <Route path="/beauty" element={<Beauty />} />
         <Route path="/home" element={<Home />} />
