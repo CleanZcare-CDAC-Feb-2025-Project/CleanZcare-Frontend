@@ -422,7 +422,7 @@ const looking = {
       {
         title: "Salon for Women",
         category:"salon_for_women",
-        image: "",
+        image: "/makeover.png",
         data: [
           {
             id: 1,
@@ -444,7 +444,7 @@ const looking = {
       {
         title: "Spa for Women",
         category:"spa_for_women",
-        image: "",
+        image: "/spa-and-relaxation.png",
         data: [
           {
             id: 1,
@@ -466,12 +466,12 @@ const looking = {
       {
         title: "Hair Studio for Women",
         category:"women_hair_studio",
-        image: "",
+        image: "/beauty-saloon.png",
       },
       {
         title: "Salon for Men",
         category:"salon_for_men",
-        image: "",
+        image: "/hairstyle.png",
         data: [
           {
             id: 1,
@@ -488,7 +488,7 @@ const looking = {
       {
         title: "Massage for Men",
         category:"message_for_men",
-        image: "",
+        image: "/barber-shop.png",
         data: [
           {
             id: 1,
