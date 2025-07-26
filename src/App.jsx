@@ -18,6 +18,18 @@ import { Services } from "./pages/services.jsx";
 import { Revenue } from "./pages/Revanue.jsx";
 import { Dashboard } from "./pages/professional/Dashboard.jsx";
 
+import ProfessionalLandingPage from "./pages/professional/ProfessionalLandingPage.jsx";
+import IncomePage from "./pages/professional/IncomePage.jsx";
+import Appointments from "./pages/professional/Appointments.jsx";
+import Customers from "./pages/professional/Customers.jsx";
+import Feedback from "./pages/professional/Feedback.jsx";
+
+import ElderlyCare from './pages/ElderlyCare.jsx';
+import Login from "./pages/Login.jsx";
+import Signup from "./pages/Signup.jsx";
+
+
+
 function App() {
   const [count, setCount] = useState(0);
 
@@ -25,9 +37,13 @@ function App() {
     <>
       <Header />
       <Routes>
+      <Route path={"/Login"} element={<Login />} />
+      <Route path={"/Signup"} element={<Signup />} />
+
         <Route path={"/"} element={<Landing />} />
         <Route path="/beauty" element={<Beauty />} />
         <Route path="/home" element={<Home />} />
+        <Route path="/ElderlyCare" element={<ElderlyCare />} />
         <Route path="/store" element={<Store />} />
         <Route path="/cart" element={<Cart />} />
         <Route path="/checkout" element={<Checkout />} />
@@ -39,8 +55,12 @@ function App() {
           <Route path="revenue" element={<Revenue />} />
         </Route>
         <Route path="/professional/*" element={<Dashboard/>}>
-          <Route path="dashboard" element={<Dashboard />} />
-
+          <Route path="dashboard" element={<ProfessionalLandingPage />} />
+          <Route index element={<ProfessionalLandingPage/>}/>
+          <Route path ="income" element ={<IncomePage/>}/>
+          <Route path="appointments" element={<Appointments />} />
+           <Route path="customers" element={<Customers />} />
+            <Route path="feedback" element={<Feedback />} />
         </Route>
       </Routes>
 
