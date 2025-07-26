@@ -8,6 +8,10 @@ import {
   StarIcon,
   UsersIcon,
   WrenchIcon,
+  CurrencyRupeeIcon,
+  CalendarDaysIcon,
+  UserIcon,
+  PencilSquareIcon
 } from "@heroicons/react/24/solid";
 import { Link } from "react-router-dom";
 
@@ -184,10 +188,44 @@ const Sidebar = ({ role }) => {
           role=="professional" &&
           <li className="flex items-center gap-3">
             <Link to="/professional/dashboard" className="flex items-center gap-3">
-              <StarIcon className="w-6 h-6 text-black-600" /> dashboard
+              <StarIcon className="w-6 h-6 text-black-600" /> Dashboard
             </Link>
           </li>
         }
+
+       {
+          role=="professional" &&
+          <li className="flex items-center gap-3">
+            <Link to="/professional/income" className="flex items-center gap-3">
+              <CurrencyRupeeIcon className="w-6 h-6 text-black-600" />IncomeDetails
+            </Link>
+          </li>
+        }
+         {
+          role=="professional" &&
+          <li className="flex items-center gap-3">
+            <Link to="/professional/booking" className="flex items-center gap-3">
+              <CalendarDaysIcon className="w-6 h-6 text-black-600" />Appointments
+            </Link>
+          </li>
+        }
+        {
+          role=="professional" &&
+          <li className="flex items-center gap-3">
+            <Link to="/professional/customer" className="flex items-center gap-3">
+              < UserIcon className="w-6 h-6 text-black-600" />Customers
+            </Link>
+          </li>
+        }
+         {
+          role=="professional" &&
+          <li className="flex items-center gap-3">
+            <Link to="/professional/feedback" className="flex items-center gap-3">
+              < PencilSquareIcon className="w-6 h-6 text-black-600" />Feedback
+            </Link>
+          </li>
+        }
+         
 
 
 
