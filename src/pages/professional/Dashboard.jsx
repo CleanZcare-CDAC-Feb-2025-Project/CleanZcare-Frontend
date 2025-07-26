@@ -11,7 +11,7 @@ export const Dashboard = () => {
       <div className="flex-1 bg-gray-100 min-h-screen">
         <Topbar />
         <div className="p-6">
-          {/* <Outlet /> */}
+           <Outlet /> 
         </div>
       </div>
     </div>
