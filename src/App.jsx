@@ -17,6 +17,9 @@ import { AdminUsers } from "./pages/AdminUsers.jsx";
 import { Services } from "./pages/services.jsx";
 import { Revenue } from "./pages/Revanue.jsx";
 import { Dashboard } from "./pages/professional/Dashboard.jsx";
+import ElderlyCare from './pages/ElderlyCare.jsx';
+
+
 
 function App() {
   const [count, setCount] = useState(0);
@@ -28,6 +31,7 @@ function App() {
         <Route path={"/"} element={<Landing />} />
         <Route path="/beauty" element={<Beauty />} />
         <Route path="/home" element={<Home />} />
+        <Route path="/ElderlyCare" element={<ElderlyCare />} />
         <Route path="/store" element={<Store />} />
         <Route path="/cart" element={<Cart />} />
         <Route path="/checkout" element={<Checkout />} />
