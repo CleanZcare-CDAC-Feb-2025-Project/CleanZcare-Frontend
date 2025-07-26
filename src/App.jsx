@@ -18,6 +18,8 @@ import { Services } from "./pages/services.jsx";
 import { Revenue } from "./pages/Revanue.jsx";
 import { Dashboard } from "./pages/professional/Dashboard.jsx";
 import ElderlyCare from './pages/ElderlyCare.jsx';
+import Login from "./pages/Login.jsx";
+import Signup from "./pages/Signup.jsx";
 
 
 
@@ -28,6 +30,9 @@ function App() {
     <>
       <Header />
       <Routes>
+      <Route path={"/Login"} element={<Login />} />
+      <Route path={"/Signup"} element={<Signup />} />
+
         <Route path={"/"} element={<Landing />} />
         <Route path="/beauty" element={<Beauty />} />
         <Route path="/home" element={<Home />} />
