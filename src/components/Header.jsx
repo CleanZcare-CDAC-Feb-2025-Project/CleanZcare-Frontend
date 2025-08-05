@@ -25,7 +25,6 @@ const navigation = [
   { name: "Beauty", href: "beauty", current: true },
   { name: "Home", href: "home", current: false },
   { name: "ElderlyCare", href: "ElderlyCare", current: false },
-  { name: "Elderly Care", href: "store", current: false },
 ];
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
