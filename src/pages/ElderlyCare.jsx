@@ -4,9 +4,10 @@ import { Sliders2 } from "../components/Sliders2";
 import { Sliders3 } from "../components/Sliders3";
 import { Sliders } from "../components/Sliders";
 import { Sliders1 } from "../components/Sliders1";
+import { Sliders5 } from "../components/Sliders5";
 
 const data = [
-  { index: 1, type: "Sliders2" },
+  { index: 1, type: "Sliders5" },
   {
     index: 2,
     type: "Sliders3",
@@ -17,22 +18,22 @@ const data = [
         {
           id: 1,
           heading: "Daily Assistance",
-          image: "/images/elderly/daily-assistance.png",
+          image: "/dailyAssistanceElderlyCare.avif",
         },
         {
           id: 2,
           heading: "Medical Support",
-          image: "/images/elderly/medical-support.png",
+          image: "/MedicalSupportElderlyCare.jpg",
         },
         {
           id: 3,
           heading: "Therapy Sessions",
-          image: "",
+          image: "/TherapySessionForElderlyCare.webp",
         },
         {
           id: 4,
           heading: "Nutrition Monitoring",
-          image: "/images/elderly/nutrition.png",
+          image: "/nutritionMonitoringElderlyCare.jpg",
         },
       ],
     },
@@ -46,7 +47,7 @@ const data = [
         {
           id: 1,
           title: "Nursing Visits",
-          image: "/images/elderly/nurse.png",
+          image: "/dailynursingelderlycare.webp",
           rating: 4.8,
           reviews: "800+",
           price: 499,
@@ -55,7 +56,7 @@ const data = [
         {
           id: 2,
           title: "Physiotherapy",
-          image: "/images/elderly/physio.png",
+          image: "/TherapySessionForElderlyCare.webp",
           rating: 4.7,
           reviews: "500+",
           price: 599,
@@ -63,8 +64,8 @@ const data = [
         },
         {
           id: 3,
-          title: "Home Doctor Visits",
-          image: "/images/elderly/doctor.png",
+          title: "Nutrition Monitoring",
+          image: "/nutritionelderlycare.jpeg",
           rating: 4.9,
           reviews: "1k+",
           price: 999,
@@ -80,6 +81,7 @@ const componentMapping = {
   Sliders1: Sliders1,
   Sliders2: Sliders2,
   Sliders3: Sliders3,
+  Sliders5: Sliders5,
 };
 
 const looking = {
