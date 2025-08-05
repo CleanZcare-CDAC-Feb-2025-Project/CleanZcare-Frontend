@@ -80,24 +80,7 @@ const data3 = [
       },
     ],
   },
-  {
-    id: 3,
-    title: "Buy Native products",
-    data: [
-      {
-        id: 1,
-        title: "Native Water Purifier",
-        category: "ro_purchase",
-        image: "image1.png",
-      },
-      {
-        id: 2,
-        title: "Native Smart Locks",
-        category: "epc_stores_smarthome",
-        image: "image1.png",
-      }
-    ],
-  },
+  
 ];
 const data1 = [
   {
@@ -316,6 +299,39 @@ const data5 = [
     ],
   },
 ];
+const data6 = [
+  {
+    id: 1,
+    title: "Elderly Care",
+    data: [
+      {
+        id: 1,
+        title: "In-Home Nursing",
+        category: "in-home nursing",
+        image: "image1.png",
+      },
+      {
+        id: 2,
+        title: "Physiotherapy",
+        category: "physiotherapy",
+        image: "image1.png",
+      },
+      {
+        id: 3,
+        title: "Home Doctor",
+        category: "home doctors",
+        image: "image1.png",
+      },
+      {
+        id: 4,
+        title: "Nutrition Monitoring",
+        category: "nutrition monitoring",
+        image: "image1.png",
+      },
+    ],
+  },
+];
+
 
 const Modal1 = ({ show, close, data, title, options_id }) => {
   const modalRef = useRef(null);
@@ -327,6 +343,7 @@ const Modal1 = ({ show, close, data, title, options_id }) => {
     "data 3": data3,
     "data 4": data4,
     "data 5": data5,
+    "data 6":data6,
   };
   const dataoption = dataMap[`data ${options_id}`];
   console.log(dataoption);

@@ -5,11 +5,14 @@ import { Sliders3 } from "../components/Sliders3";
 import { Sliders } from "../components/Sliders";
 import { Sliders1 } from "../components/Sliders1";
 import { Sliders4 } from "../components/Slider4";
+import { Sliders5 } from "../components/Sliders5";
+import { Sliders6 } from "../components/Sliders6";
 const data = [
 
   { index: 1, type: "Sliders4", data:{slideHeading:"Best-in-class features"}},
  { index: 2, type: "Sliders2"},
  { index: 3, type: "Sliders4", data:{slideHeading:"All intelligent features"}},
+
  
 ];
 const componentMapping = {
@@ -17,7 +20,9 @@ const componentMapping = {
   Sliders1: Sliders1,
   Sliders2: Sliders2,
   Sliders3: Sliders3,
-  Sliders4: Sliders4
+  Sliders4: Sliders4,
+  Sliders5: Sliders5,
+  Sliders6: Sliders6,
 };
 const looking = {
     title: "Home services at your doorstep",
@@ -38,16 +43,7 @@ const looking = {
         title: "Cleaning",
         image: "",
       },
-      {
-        title: "Native Water Purifier",
-        image: "",
-      }
-      ,
-      {
-        title: "Native Smart Locks",
-        image: "",
-      }
-      ,
+      
       {
         title: "Full Home Painting",
         image: "",
