@@ -56,8 +56,8 @@ function App() {
           <Route path="dashboard" element={<ProfessionalLandingPage />} />
           <Route index element={<ProfessionalLandingPage/>}/>
           <Route path ="income" element ={<IncomePage/>}/>
-          <Route path="appointments" element={<Appointments />} />
-           <Route path="customers" element={<Customers />} />
+          <Route path="booking" element={<Appointments />} />
+           <Route path="customer" element={<Customers />} />
             <Route path="feedback" element={<Feedback />} />
         </Route>
       </Routes>
