@@ -44,14 +44,17 @@ const cartData = [
 function ProfessionalLandingPage() {
     return (
         <>
+        {/* <h1 className="text-2xl font-bold text-center text-blue-600 mb-4">
+      Professional Dashboard
+    </h1> */}
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-6">
 
                 {
-                    cartData.map((data, index) => (
-                        <OverviewCard icon={data.icon} title={data.title} value={data.value} />
-                    ))
-
+                cartData.map((data, index) => (
+                 <OverviewCard key={index} icon={data.icon} title={data.title} value={data.value} />
+                 ))
                 }
+
                 {/* <OverviewCard icon={CheckBadgeIcon} title="Accepted Orders" value="500" />
         <OverviewCard
           icon={XCircleIcon}
