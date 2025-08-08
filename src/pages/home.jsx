@@ -428,7 +428,6 @@ const looking = {
     {
       title: "Appliance Repair & Service",
       image: "/air-conditioner.png",
-      // category:"salon_for_women",
       modal: "modal1",
     },
     {

@@ -91,19 +91,11 @@ const looking = {
       title: "In-Home Nursing",
       category: "in_home_nursing",
       image: "/elderlyCare.jpeg",
-      data: [
-        { id: 1, image: "/images/elderly/nursing1.png", category: "day" },
-        { id: 2, image: "/images/elderly/nursing2.png", category: "night" },
-      ],
     },
     {
       title: "Home Doctor",
       category: "home_doctor",
       image: "/elderlycare1.jpeg",
-      data: [
-        { id: 1, image: "/images/elderly/doctor1.png", category: "general" },
-        { id: 2, image: "/images/elderly/doctor2.png", category: "specialist" },
-      ],
     },
     {
       title: "Companion Support",
@@ -114,10 +106,6 @@ const looking = {
       title: "Physiotherapy",
       category: "physiotherapy",
       image: "/orthopedic-nurse-stretching-spinal-cord-shoulder-elder-patient-with-injury-physiotherapy_114016-26675.jpg",
-      data: [
-        { id: 1, image: "/images/elderly/physio1.png", category: "basic" },
-        { id: 2, image: "/images/elderly/physio2.png", category: "advanced" },
-      ],
     },
   ],
 };
