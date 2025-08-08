@@ -402,7 +402,7 @@ const looking = {
       id:1,
       title: "Women's Salon & Spa",
       // category:"women_salon_and_spa",
-      image: "",
+      image: "/Women's Salon & Spa.png",
       modal: "modal1",
       
     },
@@ -410,7 +410,7 @@ const looking = {
       id:2,
       title: "Men's Salon & Massage",
       // category:"men_salonand_massage",
-      image: "",
+      image: "/Men's Salon & Spa.png",
       modal: "modal1",
       
     },
@@ -418,36 +418,36 @@ const looking = {
       id:3,
       title: "Applicance Repair",
       // category:"applicance_repair",
-      image: "",
+      image: "Appliance Repair.png",
       modal: "modal1",
     },
     {
       id:4,
       title: "Cleaning & Pest Control",
       // category:"cleaning_and_pest_control",
-      image: "",
+      image: "/Cleaning & Pest Control.png",
       modal: "modal1",
     },
     {
       id:5,
       title: "Electician, Plumber & Carpenter",
       // category:"electician_plumber_and_carpenter",
-      image: "",
+      image: "/Electrician, Plumber & Carpenter.png",
       modal: "modal1",
     },
     {
       id:6,
       title: "Elderly Care",
       category: "Elderly_Care",
-      image: "",
+      image: "/Elderly Care.png",
       modal:"modal1"
     },
    
     {
       id:8,
-      title: "Painting & Water profing",
-      category: "painting_and_water_profing",
-      image: "",
+      title: "Painting & Water proofing",
+      category: "painting_and_water_proofing",
+      image: "/Painting & Water Proofing.png",
       modal:"modal1"
     },
   ],

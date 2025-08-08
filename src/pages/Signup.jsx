@@ -11,11 +11,13 @@ const Signup = () => {
   const navigate = useNavigate();
 
   const register = () => {
+    console.log(userInfo)
     if (!userInfo.name || !userInfo.email || !userInfo.password) {
       alert("Please fill in all fields");
       return;
     }
     alert("Signup successful!");
+    // const response = await userSiginup()
     navigate("/login");
   };
 

@@ -9,7 +9,7 @@ const filesStatData = [
     // rating: 4.79,
     // reviews: "106k",
     // price: 1098,
-    link: "/slider2.png",
+    link: "/HomeServiess.png",
     // currency:"INR"
     // fill: "#4c5c75",
     // percentage: 94,

@@ -13,100 +13,100 @@ const data = [
     data: {
       slideHeading: "",
       slideData: [
-        {
-          id: 1,
-          // title: "Total Storage ",
-          // metric: "94 GB",
-          image: "/slider1.png",
-          // icon: "",
-          // rating: 4.79,
-          // reviews: "106k",
-          // price: 1098,
-          // currency:"INR"
-          // fill: "#4c5c75",
-          // percentage: 94,
-        },
-        {
-          id: 2,
-          image: "/slider1.png",
-          // title: "Images",
-          // rating: 3.79,
-          // reviews: "106k",
-          // price: 1098,
-          // currency:"INR"
-        },
-        {
-          id: 3,
-          image: "/slider1.png",
-          // title: "Documents",
-          // reviews: "106k",
-          // price: 1098,
-          // rating: 5.79,
-          // currency:"INR"
-        },
-        {
-          id: 4,
-          image: "/slider1.png",
-          // title: "Audios",
-          // reviews: "106k",
-          // price: 1098,
-          // rating: 2.79,
-          // currency:"INR"
-        },
-        {
-          id: 5,
-          image: "/slider1.png",
-          // title: "Videos",
-          // reviews: "106k",
-          // price: 1098,
-          // rating: 3.79,
-          // currency:"INR"
-        },
-        {
-          id: 6,
-          image: "/slider1.png",
-          // title: "Videos",
-          // reviews: "106k",
-          // price: 1098,
-          // rating: 4.79,
-          // currency:"INR"
-        },
-        {
-          id: 7,
-          image: "/slider1.png",
-          // title: "Videos",
-          // reviews: "106k",
-          // price: 1098,
-          // rating: 1.79,
-          // currency:"INR"
-        },
-        {
-          id: 8,
-          image: "/slider1.png",
-          // title: "Videos",
-          // reviews: "106k",
-          // price: 1098,
-          // rating: 2.79,
-          // currency:"INR"
-        },
-        {
-          id: 9,
-          image: "/slider1.png",
-          // title: "Videos",
-          // reviews: "106k",
-          // price: 1098,
-          // rating: 3.79,
-          // currency:"INR"
-        },
-        {
-          id: 10,
-          image: "/slider1.png",
-          // title: "Videos",
-          // reviews: "10k",
-          // price: 10,
-          // rating: 4.79,
-          // currency: "usd",
-        },
+        // {
+        //   id: 1,
+        //   // title: "Total Storage ",
+        //   // metric: "94 GB",
+        //   image: "/slider1.png",
+        //   // icon: "",
+        //   // rating: 4.79,
+        //   // reviews: "106k",
+        //   // price: 1098,
+        //   // currency:"INR"
+        //   // fill: "#4c5c75",
+        //   // percentage: 94,
+        // },
+        // {
+        //   id: 2,
+        //   image: "/slider1.png",
+        //   // title: "Images",
+        //   // rating: 3.79,
+        //   // reviews: "106k",
+        //   // price: 1098,
+        //   // currency:"INR"
+        // },
+        // {
+        //   id: 3,
+        //   image: "/slider1.png",
+        //   // title: "Documents",
+        //   // reviews: "106k",
+        //   // price: 1098,
+        //   // rating: 5.79,
+        //   // currency:"INR"
+        // },
+        // {
+        //   id: 4,
+        //   image: "/slider1.png",
+        //   // title: "Audios",
+        //   // reviews: "106k",
+        //   // price: 1098,
+        //   // rating: 2.79,
+        //   // currency:"INR"
+        // },
+        // {
+        //   id: 5,
+        //   image: "/slider1.png",
+        //   // title: "Videos",
+        //   // reviews: "106k",
+        //   // price: 1098,
+        //   // rating: 3.79,
+        //   // currency:"INR"
+        // },
+        // {
+        //   id: 6,
+        //   image: "/slider1.png",
+        //   // title: "Videos",
+        //   // reviews: "106k",
+        //   // price: 1098,
+        //   // rating: 4.79,
+        //   // currency:"INR"
+        // },
+        // {
+        //   id: 7,
+        //   image: "/slider1.png",
+        //   // title: "Videos",
+        //   // reviews: "106k",
+        //   // price: 1098,
+        //   // rating: 1.79,
+        //   // currency:"INR"
+        // },
+        // {
+        //   id: 8,
+        //   image: "/slider1.png",
+        //   // title: "Videos",
+        //   // reviews: "106k",
+        //   // price: 1098,
+        //   // rating: 2.79,
+        //   // currency:"INR"
+        // },
+        // {
+        //   id: 9,
+        //   image: "/slider1.png",
+        //   // title: "Videos",
+        //   // reviews: "106k",
+        //   // price: 1098,
+        //   // rating: 3.79,
+        //   // currency:"INR"
+        // },
+        // {
+        //   id: 10,
+        //   image: "/slider1.png",
+        //   // title: "Videos",
+        //   // reviews: "10k",
+        //   // price: 10,
+        //   // rating: 4.79,
+        //   // currency: "usd",
+        // },
       ],
     },
   },
@@ -196,12 +196,12 @@ const data = [
     index: 3,
     type: "Sliders1",
     data: {
-      slideHeading: "Salon for  women",
+      slideHeading: "Elevate your Home",
       slideData: [
         {
           id: 1,
-          title: "Total Storage ",
-          image: "/slider1.png",
+          title: "Custom Upholstery ",
+          image: "/CustomUpholstery.png",
           rating: 4.79,
           reviews: "106k",
           price: 1098,
@@ -209,8 +209,8 @@ const data = [
         },
         {
           id: 2,
-          image: "/slider1.png",
-          title: "Images",
+          image: "/LightningDesign.png",
+          title: "Lightning Design",
           rating: 3.79,
           reviews: "106k",
           price: 1098,
@@ -218,8 +218,8 @@ const data = [
         },
         {
           id: 3,
-          image: "/slider1.png",
-          title: "Documents",
+          image: "/ColorConsultation.png",
+          title: "Color Consultation",
           reviews: "106k",
           price: 1098,
           rating: 5.79,
@@ -227,8 +227,8 @@ const data = [
         },
         {
           id: 4,
-          image: "/slider1.png",
-          title: "Audios",
+          image: "/OrganizationAndDecluttering.png",
+          title: "Organization And Decluttering",
           reviews: "106k",
           price: 1098,
           rating: 2.79,
@@ -236,8 +236,8 @@ const data = [
         },
         {
           id: 5,
-          image: "/slider1.png",
-          title: "Videos",
+          image: "/OutdoorOasis.png",
+          title: "Outdoor Oasis",
           reviews: "106k",
           price: 1098,
           rating: 3.79,
@@ -245,8 +245,8 @@ const data = [
         },
         {
           id: 6,
-          image: "/slider1.png",
-          title: "Videos",
+          image: "/FurnitureSourcing.png",
+          title: "Furniture Sourcing",
           reviews: "106k",
           price: 1098,
           rating: 4.79,
@@ -254,8 +254,8 @@ const data = [
         },
         {
           id: 7,
-          image: "/slider1.png",
-          title: "Videos",
+          image: "/InteriorStyling.png",
+          title: "Interior Styling",
           reviews: "106k",
           price: 1098,
           rating: 1.79,
@@ -263,8 +263,8 @@ const data = [
         },
         {
           id: 8,
-          image: "/slider1.png",
-          title: "Videos",
+          image: "/KitchenRefresh.png",
+          title: "Kitchen Refresh",
           reviews: "106k",
           price: 1098,
           rating: 2.79,
@@ -272,8 +272,8 @@ const data = [
         },
         {
           id: 9,
-          image: "/slider1.png",
-          title: "Videos",
+          image: "/HomeStaging.png",
+          title: "Home Staging",
           reviews: "106k",
           price: 1098,
           rating: 3.79,
@@ -281,8 +281,8 @@ const data = [
         },
         {
           id: 10,
-          image: "/slider1.png",
-          title: "Videos",
+          image: "/SpacePlanning.png",
+          title: "Space Planning",
           reviews: "10k",
           price: 10,
           rating: 4.79,
@@ -296,28 +296,28 @@ const data = [
     index: 5,
     type: "Sliders3",
     data: {
-      slideHeading: "Spa For Women",
-      SlideSubHeading: "Refresh. Rewind. Rejuvenate.",
+      slideHeading: "Cleaning And Pest Control",
+      SlideSubHeading: "Clean Pestfree Homes.",
       data: [
         {
           id: 1,
-          heading: "Total Storage ",
-          image: "/sliderp.png",
+          heading: "Deep Cleaning ",
+          image: "/Deep Cleaning.png",
         },
         {
           id: 2,
-          heading: "Total Storage ",
-          image: "/sliderp.png",
+          heading: "General Pest Management",
+          image: "/General Pest Management.png",
         },
         {
           id: 3,
-          heading: "Total Storage ",
-          image: "/sliderp.png",
+          heading: "Regular Housekeeping",
+          image: "/Regular Housekeeping.png",
         },
         {
           id: 4,
-          heading: "Total Storage ",
-          image: "/sliderp.png",
+          heading: "Termite and Rodent Control ",
+          image: "/Termite and Rodent Control.png",
         },
       ],
     },
@@ -326,28 +326,33 @@ const data = [
     index: 6,
     type: "Sliders3",
     data: {
-      slideHeading: "Hair & Nail services",
-      slideSubHeading: "Refreshed style, revamped look",
+      slideHeading: "Appliance Repair And Service",
+      slideSubHeading: "Repair And Reuse",
       data: [
         {
           id: 1,
-          heading: "Total Storage ",
-          image: "/sliderp.png",
+          heading: "Washer & Dryer Service",
+          image: "/Washer & Dryer Service.png",
         },
         {
           id: 2,
-          heading: "Total Storage ",
-          image: "/sliderp.png",
+          heading: "Refrigerator Repair",
+          image: "/Refrigerator Repair.png",
         },
         {
           id: 3,
-          heading: "Total Storage ",
-          image: "/sliderp.png",
+          heading: "Dishwasher Repair",
+          image: "/Dishwasher Repair.png",
         },
         {
           id: 4,
-          heading: "Total Storage ",
-          image: "/sliderp.png",
+          heading: "Oven & Stove Service",
+          image: "/Oven & Stove Service.png",
+        },
+        {
+          id: 5,
+          heading: "Water Purifier Repair",
+          image: "/Water Purifier Repair.png",
         },
       ],
     },
@@ -357,63 +362,68 @@ const data = [
     index: 8,
     type: "Sliders3",
     data: {
-      slideHeading: "Salon for men",
-      slideSubHeading: "Grooming essentials",
+      slideHeading: "Painting Plumbing And Garden",
+      slideSubHeading: "Brighter And Greener Homes",
       data: [
         {
           id: 1,
-          heading: "Total Storage ",
-          image: "/sliderp.png",
+          heading: "Interior & Exterior Painting",
+          image: "/Interior & Exterior Painting.png",
         },
         {
           id: 2,
-          heading: "Total Storage ",
-          image: "/sliderp.png",
+          heading: "Garden & Landscaping",
+          image: "/Garden & Landscaping.png",
         },
         {
           id: 3,
-          heading: "Total Storage ",
-          image: "/sliderp.png",
+          heading: "Drywall Repair & Finishing",
+          image: "/Drywall Repair & Finishing.png",
         },
         {
           id: 4,
-          heading: "Total Storage ",
-          image: "/sliderp.png",
+          heading: "Plumbing Services",
+          image: "/Plumbing Services.png",
+        },
+        {
+          id: 5,
+          heading: "Doors and Windows Polishing",
+          image: "/Doors and Windows Polishing.png",
         },
       ],
     },
   },
-  { index: 9, type: "Sliders2" },
-  {
-    index: 10,
-    type: "Sliders3",
-    data: {
-      slideHeading: "Massage for men",
-      slideSubHeading: "Curated massage by top therapists.",
-      data: [
-        {
-          id: 1,
-          heading: "Total Storage ",
-          image: "/sliderp.png",
-        },
-        {
-          id: 2,
-          heading: "Total Storage ",
-          image: "/sliderp.png",
-        },
-        {
-          id: 3,
-          heading: "Total Storage ",
-          image: "/sliderp.png",
-        },
-        {
-          id: 4,
-          heading: "Total Storage ",
-          image: "/sliderp.png",
-        },
-      ],
-    },
-  },
+  // { index: 9, type: "Sliders2" },
+  // {
+  //   index: 10,
+  //   type: "Sliders3",
+  //   data: {
+  //     slideHeading: "Massage for men",
+  //     slideSubHeading: "Curated massage by top therapists.",
+  //     data: [
+  //       {
+  //         id: 1,
+  //         heading: "Total Storage ",
+  //         image: "/sliderp.png",
+  //       },
+  //       {
+  //         id: 2,
+  //         heading: "Total Storage ",
+  //         image: "/sliderp.png",
+  //       },
+  //       {
+  //         id: 3,
+  //         heading: "Total Storage ",
+  //         image: "/sliderp.png",
+  //       },
+  //       {
+  //         id: 4,
+  //         heading: "Total Storage ",
+  //         image: "/sliderp.png",
+  //       },
+  //     ],
+  //   },
+  // },
 ];
 const componentMapping = {
   Sliders: Sliders,
