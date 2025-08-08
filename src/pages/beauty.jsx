@@ -4,118 +4,17 @@ import { Sliders2 } from "../components/Sliders2";
 import { Sliders3 } from "../components/Sliders3";
 import { Sliders } from "../components/Sliders";
 import { Sliders1 } from "../components/Sliders1";
+import { Sliders6 } from "../components/Sliders6";
 const data = [
-  { 
-    index: 1,
-    type: "Sliders",
-    data: {
-    slideHeading: "",
-    slideData: [
-      {
-        id: 1,
-        // title: "Total Storage ",
-        // metric: "94 GB",
-        image: "/slider1.png",
-        // icon: "",
-        // rating: 4.79,
-        // reviews: "106k",
-        // price: 1098,
-        // currency:"INR"
-        // fill: "#4c5c75",
-        // percentage: 94,
-      },
-      {
-        id: 2,
-        image: "/slider1.png",
-        // title: "Images",
-        // rating: 3.79,
-        // reviews: "106k",
-        // price: 1098,
-        // currency:"INR"
-      },
-      {
-        id: 3,
-        image: "/slider1.png",
-        // title: "Documents",
-        // reviews: "106k",
-        // price: 1098,
-        // rating: 5.79,
-        // currency:"INR"
-      },
-      {
-        id: 4,
-        image: "/slider1.png",
-        // title: "Audios",
-        // reviews: "106k",
-        // price: 1098,
-        // rating: 2.79,
-        // currency:"INR"
-      },
-      {
-        id: 5,
-        image: "/slider1.png",
-        // title: "Videos",
-        // reviews: "106k",
-        // price: 1098,
-        // rating: 3.79,
-        // currency:"INR"
-      },
-      {
-        id: 6,
-        image: "/slider1.png",
-        // title: "Videos",
-        // reviews: "106k",
-        // price: 1098,
-        // rating: 4.79,
-        // currency:"INR"
-      },
-      {
-        id: 7,
-        image: "/slider1.png",
-        // title: "Videos",
-        // reviews: "106k",
-        // price: 1098,
-        // rating: 1.79,
-        // currency:"INR"
-      },
-      {
-        id: 8,
-        image: "/slider1.png",
-        // title: "Videos",
-        // reviews: "106k",
-        // price: 1098,
-        // rating: 2.79,
-        // currency:"INR"
-      },
-      {
-        id: 9,
-        image: "/slider1.png",
-        // title: "Videos",
-        // reviews: "106k",
-        // price: 1098,
-        // rating: 3.79,
-        // currency:"INR"
-      },
-      {
-        id: 10,
-        image: "/slider1.png",
-        // title: "Videos",
-        // reviews: "10k",
-        // price: 10,
-        // rating: 4.79,
-        // currency: "usd",
-      },
-    ],
-  } },
-  { index: 2,
+  { index: 1,
     type: "Sliders1",
     data: {
     slideHeading: "Most booked services",
     slideData: [
       {
         id: 1,
-        title: "Total Storage ",
-        image: "/slider1.png",
+        title: "Hair Setting for Men ",
+        image: "/SalonForMenimg3.jpeg",
         rating: 4.79,
         reviews: "106k",
         price: 1098,
@@ -123,8 +22,8 @@ const data = [
       },
       {
         id: 2,
-        image: "/slider1.png",
-        title: "Images",
+        image: "/female-client-receiving-haircut-beauty-salon-young-woman-enjoying-getting-new-hairstyle_141172-7333.avif",
+        title: "Hair Setting for Women",
         rating: 3.79,
         reviews: "106k",
         price: 1098,
@@ -132,8 +31,8 @@ const data = [
       },
       {
         id: 3,
-        image: "/slider1.png",
-        title: "Documents",
+        image: "/salonforwomenimg4.jpeg",
+        title: "Nail Extension",
         reviews: "106k",
         price: 1098,
         rating: 5.79,
@@ -141,8 +40,8 @@ const data = [
       },
       {
         id: 4,
-        image: "/slider1.png",
-        title: "Audios",
+        image: "/OIP (1).jpeg",
+        title: "FullBody Massage for Men",
         reviews: "106k",
         price: 1098,
         rating: 2.79,
@@ -150,8 +49,8 @@ const data = [
       },
       {
         id: 5,
-        image: "/slider1.png",
-        title: "Videos",
+        image: "/SpaForWomenimg3.jpeg",
+        title: "FullBody Massage for Women",
         reviews: "106k",
         price: 1098,
         rating: 3.79,
@@ -159,8 +58,8 @@ const data = [
       },
       {
         id: 6,
-        image: "/slider1.png",
-        title: "Videos",
+        image: "/salonforwomenimg2.jpeg",
+        title: "Waxing",
         reviews: "106k",
         price: 1098,
         rating: 4.79,
@@ -168,8 +67,8 @@ const data = [
       },
       {
         id: 7,
-        image: "/slider1.png",
-        title: "Videos",
+        image: "/SalonForMenimg4.jpeg",
+        title: "Beard Setting",
         reviews: "106k",
         price: 1098,
         rating: 1.79,
@@ -177,8 +76,8 @@ const data = [
       },
       {
         id: 8,
-        image: "/slider1.png",
-        title: "Videos",
+        image: "/SpaForWomenimg2.jpeg",
+        title: "Pedicure",
         reviews: "106k",
         price: 1098,
         rating: 2.79,
@@ -186,8 +85,8 @@ const data = [
       },
       {
         id: 9,
-        image: "/slider1.png",
-        title: "Videos",
+        image: "/salonforwomenimg1.jpeg",
+        title: "Hair Spa",
         reviews: "106k",
         price: 1098,
         rating: 3.79,
@@ -195,8 +94,8 @@ const data = [
       },
       {
         id: 10,
-        image: "/slider1.png",
-        title: "Videos",
+        image: "/SalonForMenimg1.jpeg",
+        title: "Facial",
         reviews: "10k",
         price: 10,
         rating: 4.79,
@@ -204,94 +103,42 @@ const data = [
       },
     ],
   } },
-  { index: 3, type: "Sliders1", data: {
-    slideHeading: "Salon for  women",
-    slideData: [
+  { index: 2,
+     type: "Sliders3",
+     data: {
+    slideHeading: "Salon For Women",
+    data: [
       {
         id: 1,
-        title: "Total Storage ",
-        image: "/slider1.png",
+        heading: "Hair Setting ",
+        image: "/female-client-receiving-haircut-beauty-salon-young-woman-enjoying-getting-new-hairstyle_141172-7333.avif",
+        reviews: "10k",
+        price: 10,
         rating: 4.79,
-        reviews: "106k",
-        price: 1098,
-        currency: "INR",
+        currency: "usd",
       },
       {
         id: 2,
-        image: "/slider1.png",
-        title: "Images",
-        rating: 3.79,
-        reviews: "106k",
-        price: 1098,
-        currency: "INR",
+         heading: "Waxing ",
+        image: "/salonforwomenimg2.jpeg",
+        reviews: "10k",
+        price: 10,
+        rating: 4.79,
+        currency: "usd",
       },
       {
         id: 3,
-        image: "/slider1.png",
-        title: "Documents",
-        reviews: "106k",
-        price: 1098,
-        rating: 5.79,
-        currency: "INR",
+        heading: "Hair Spa ",
+        image: "/salonforwomenimg1.jpeg",
+        reviews: "10k",
+        price: 10,
+        rating: 4.79,
+        currency: "usd",
       },
       {
         id: 4,
-        image: "/slider1.png",
-        title: "Audios",
-        reviews: "106k",
-        price: 1098,
-        rating: 2.79,
-        currency: "INR",
-      },
-      {
-        id: 5,
-        image: "/slider1.png",
-        title: "Videos",
-        reviews: "106k",
-        price: 1098,
-        rating: 3.79,
-        currency: "INR",
-      },
-      {
-        id: 6,
-        image: "/slider1.png",
-        title: "Videos",
-        reviews: "106k",
-        price: 1098,
-        rating: 4.79,
-        currency: "INR",
-      },
-      {
-        id: 7,
-        image: "/slider1.png",
-        title: "Videos",
-        reviews: "106k",
-        price: 1098,
-        rating: 1.79,
-        currency: "INR",
-      },
-      {
-        id: 8,
-        image: "/slider1.png",
-        title: "Videos",
-        reviews: "106k",
-        price: 1098,
-        rating: 2.79,
-        currency: "INR",
-      },
-      {
-        id: 9,
-        image: "/slider1.png",
-        title: "Videos",
-        reviews: "106k",
-        price: 1098,
-        rating: 3.79,
-        currency: "INR",
-      },
-      {
-        id: 10,
-        image: "/slider1.png",
-        title: "Videos",
+        heading: "Pedicure ",
+        image: "/SpaForWomenimg2.jpeg",
         reviews: "10k",
         price: 10,
         rating: 4.79,
@@ -299,8 +146,8 @@ const data = [
       },
     ],
   } },
-  { index: 4, type: "Sliders2" },
-  { index: 5,
+  { index: 3, type: "Sliders6" },
+  { index: 4,
      type: "Sliders3",
      data: {
     slideHeading: "Spa For Women",
@@ -308,103 +155,103 @@ const data = [
     data: [
       {
         id: 1,
-        heading: "Total Storage ",
-        image: "/sliderp.png",
+        heading: "Facial ",
+        image: "/salonforwomenimg3.jpeg",
       },
       {
         id: 2,
-        heading: "Total Storage ",
-        image: "/sliderp.png",
+        heading: "Head Massage ",
+        image: "/SpaForWomenimg1.jpeg",
       },
       {
         id: 3,
-        heading: "Total Storage ",
-        image: "/sliderp.png",
+        heading: "Face Mask ",
+        image: "/SpaForWomenig4.webp",
       },
       {
         id: 4,
-        heading: "Total Storage ",
-        image: "/sliderp.png",
+        heading: "Full Body Massage ",
+        image: "/SpaForWomenimg3.jpeg",
       },
     ],
   } },
-  { index: 6, type: "Sliders3", data: {
+  { index: 5, type: "Sliders3", data: {
     slideHeading: "Hair & Nail services",
     slideSubHeading:"Refreshed style, revamped look",
     data: [
       {
         id: 1,
-        heading: "Total Storage ",
-        image: "/sliderp.png",
+        heading: "Hair Setting ",
+        image: "/female-client-receiving-haircut-beauty-salon-young-woman-enjoying-getting-new-hairstyle_141172-7333.avif",
       },
       {
         id: 2,
-        heading: "Total Storage ",
-        image: "/sliderp.png",
+        heading: "Pedicure ",
+        image: "/SpaForWomenimg2.jpeg",
       },
       {
         id: 3,
-        heading: "Total Storage ",
-        image: "/sliderp.png",
+        heading: "Hair Spa ",
+        image: "/salonforwomenimg1.jpeg",
       },
       {
         id: 4,
-        heading: "Total Storage ",
-        image: "/sliderp.png",
+        heading: "Nail Extension ",
+        image: "/salonforwomenimg4.jpeg",
       },
     ],
   } },
-  { index: 7, type: "Sliders2" },
-  { index: 8, type: "Sliders3", data: {
+  { index: 6, type: "Sliders6" },
+  { index: 7, type: "Sliders3", data: {
     slideHeading: "Salon for men",
     slideSubHeading:"Grooming essentials",
     data: [
       {
         id: 1,
-        heading: "Total Storage ",
-        image: "/sliderp.png",
+        heading: "Hair Setting ",
+        image: "/SalonForMenimg3.jpeg",
       },
       {
         id: 2,
-        heading: "Total Storage ",
-        image: "/sliderp.png",
+        heading: "Beard Setting ",
+        image: "/SalonForMenimg4.jpeg",
       },
       {
         id: 3,
-        heading: "Total Storage ",
-        image: "/sliderp.png",
+        heading: "Eyebrow Setting ",
+        image: "/MensEyebrowSetting.jpeg",
       },
       {
         id: 4,
-        heading: "Total Storage ",
-        image: "/sliderp.png",
+        heading: "Hair Spa ",
+        image: "/SalonForMen.jpeg",
       },
     ],
   } },
-  { index: 9, type: "Sliders2" },
-  { index: 10, type: "Sliders3", data: {
+  { index: 8, type: "Sliders6" },
+  { index: 9, type: "Sliders3", data: {
     slideHeading: "Massage for men",
     slideSubHeading:"Curated massage by top therapists.",
     data: [
       {
         id: 1,
-        heading: "Total Storage ",
-        image: "/sliderp.png",
+        heading: "Head Massage ",
+        image: "/OIP.jpeg",
       },
       {
         id: 2,
-        heading: "Total Storage ",
-        image: "/sliderp.png",
+        heading: "Facial Massage ",
+        image: "/MessageForMen.jpeg",
       },
       {
         id: 3,
-        heading: "Total Storage ",
-        image: "/sliderp.png",
+        heading: "Legs Massage ",
+        image: "/OIP (3).jpeg",
       },
       {
         id: 4,
-        heading: "Total Storage ",
-        image: "/sliderp.png",
+        heading: "Full Body Massage ",
+        image: "/MassageMen.jpg",
       },
     ],
   } },
@@ -415,6 +262,7 @@ const componentMapping = {
   Sliders1: Sliders1,
   Sliders2: Sliders2,
   Sliders3: Sliders3,
+  Sliders6: Sliders6,
 };
 const looking = {
     title: "Beauty services at your doorstep",
@@ -423,45 +271,12 @@ const looking = {
         title: "Salon for Women",
         category:"salon_for_women",
         image: "/makeover.png",
-        data: [
-          {
-            id: 1,
-            image: "popup2.png",
-            category: "luxe",
-          },
-          {
-            id: 2,
-            image: "popup3.png",
-            category: "prime",
-          },
-          {
-            id: 3,
-            image: "popup4.png",
-            category:"classic"
-          },
-        ]
       },
       {
         title: "Spa for Women",
         category:"spa_for_women",
         image: "/spa-and-relaxation.png",
-        data: [
-          {
-            id: 1,
-            image: "popup5.png",
-            category: "Ayurveda",
-          },
-          {
-            id: 2,
-            image: "popup6.png",
-            category: "prime",
-          },
-          {
-            id: 3,
-            image: "popup7.png",
-            category:"luxe"
-          },
-        ]
+
       },
       {
         title: "Hair Studio for Women",
@@ -472,40 +287,11 @@ const looking = {
         title: "Salon for Men",
         category:"salon_for_men",
         image: "/hairstyle.png",
-        data: [
-          {
-            id: 1,
-            image: "popup8.png",
-            category: "royale",
-          },
-          {
-            id: 2,
-            image: "popup9.png",
-            category: "prime",
-          }
-        ]
       },
       {
         title: "Massage for Men",
         category:"message_for_men",
         image: "/barber-shop.png",
-        data: [
-          {
-            id: 1,
-            image: "popup10.png",
-            category: "prime",
-          },
-          {
-            id: 2,
-            image: "popup11.png",
-            category: "ayurveda",
-          },
-          {
-            id: 3,
-            image: "popup12.png",
-            category:"royale"
-          },
-        ]
       }
     ],
   };
