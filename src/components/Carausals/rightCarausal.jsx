@@ -27,7 +27,7 @@ const RenameCarausal = ({data}) => {
          <RatingsCustomer/>
         </div>
         <div className="px-5">
-          <img src="/czc.jpg" alt="czc" />
+          <img src="/homeImage (2).png" alt="czc" />
         </div>
       </div>
     </div>
