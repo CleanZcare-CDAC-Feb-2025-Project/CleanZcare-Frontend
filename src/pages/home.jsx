@@ -161,39 +161,227 @@ const data = [
           rating: 3.79,
           currency: "INR",
         },
-        {
-          id: 6,
-          image: "/slider1.png",
-          title: "Plumbing Work",
-          reviews: "106k",
-          price: 1098,
-          rating: 4.79,
-          currency: "INR",
-        },
-        {
-          id: 7,
-          image: "/slider1.png",
-          title: "Lock Repairing",
-          reviews: "106k",
-          price: 1098,
-          rating: 1.79,
-          currency: "INR",
-        },
-        {
-          id: 8,
-          image: "/slider1.png",
-          title: "Water Purifier Repairing",
-          reviews: "106k",
-          price: 1098,
-          rating: 2.79,
-          currency: "INR",
-        },
+        
         
       ],
     },
   },
+  // {
+  //   index: 3,
+  //   type: "Sliders1",
+  //   data: {
+  //     slideHeading: "Elevate your Home",
+  //     slideData: [
+  //       {
+  //         id: 1,
+  //         title: "Custom Upholstery ",
+  //         image: "/CustomUpholstery.png",
+  //         rating: 4.79,
+  //         reviews: "106k",
+  //         price: 1098,
+  //         currency: "INR",
+  //       },
+  //       {
+  //         id: 2,
+  //         image: "/LightningDesign.png",
+  //         title: "Lightning Design",
+  //         rating: 3.79,
+  //         reviews: "106k",
+  //         price: 1098,
+  //         currency: "INR",
+  //       },
+  //       {
+  //         id: 3,
+  //         image: "/ColorConsultation.png",
+  //         title: "Color Consultation",
+  //         reviews: "106k",
+  //         price: 1098,
+  //         rating: 5.79,
+  //         currency: "INR",
+  //       },
+  //       {
+  //         id: 4,
+  //         image: "/OrganizationAndDecluttering.png",
+  //         title: "Organization And Decluttering",
+  //         reviews: "106k",
+  //         price: 1098,
+  //         rating: 2.79,
+  //         currency: "INR",
+  //       },
+  //       {
+  //         id: 5,
+  //         image: "/OutdoorOasis.png",
+  //         title: "Outdoor Oasis",
+  //         reviews: "106k",
+  //         price: 1098,
+  //         rating: 3.79,
+  //         currency: "INR",
+  //       },
+  //       {
+  //         id: 6,
+  //         image: "/FurnitureSourcing.png",
+  //         title: "Furniture Sourcing",
+  //         reviews: "106k",
+  //         price: 1098,
+  //         rating: 4.79,
+  //         currency: "INR",
+  //       },
+  //       {
+  //         id: 7,
+  //         image: "/InteriorStyling.png",
+  //         title: "Interior Styling",
+  //         reviews: "106k",
+  //         price: 1098,
+  //         rating: 1.79,
+  //         currency: "INR",
+  //       },
+  //       {
+  //         id: 8,
+  //         image: "/KitchenRefresh.png",
+  //         title: "Kitchen Refresh",
+  //         reviews: "106k",
+  //         price: 1098,
+  //         rating: 2.79,
+  //         currency: "INR",
+  //       },
+  //       {
+  //         id: 9,
+  //         image: "/HomeStaging.png",
+  //         title: "Home Staging",
+  //         reviews: "106k",
+  //         price: 1098,
+  //         rating: 3.79,
+  //         currency: "INR",
+  //       },
+  //       {
+  //         id: 10,
+  //         image: "/SpacePlanning.png",
+  //         title: "Space Planning",
+  //         reviews: "10k",
+  //         price: 10,
+  //         rating: 4.79,
+  //         currency: "usd",
+  //       },
+  //     ],
+  //   },
+  // },
+  { index: 4, type: "Sliders2" },
   {
     index: 3,
+    type: "Sliders3",
+    data: {
+      slideHeading: "Cleaning And Pest Control",
+      slideSubHeading: "Clean Pest free Homes",
+      data: [
+        {
+          id: 1,
+          heading: "Deep Cleaning ",
+          image: "/Deep Cleaning.png",
+        },
+        {
+          id: 2,
+          heading: "General Pest Management",
+          image: "/General Pest Management.png",
+        },
+        {
+          id: 3,
+          heading: "Regular Housekeeping",
+          image: "/Regular Housekeeping.png",
+        },
+        {
+          id: 4,
+          heading: "Termite and Rodent Control ",
+          image: "/Termite and Rodent Control.png",
+        },
+        {
+          id: 5,
+          heading: "Move-in Move-out cleaning",
+          image: "/move-inmove-out cleaning.png",
+        },
+        {
+          id: 6,
+          heading: "Bed bug Control ",
+          image: "/Bedbug.png",
+        },
+      ],
+    },
+  },
+
+  
+  {
+    index: 6,
+    type: "Sliders3",
+    data: {
+      slideHeading: "Appliance Repair And Service",
+      slideSubHeading: "Repair And Reuse",
+      data: [
+        {
+          id: 1,
+          heading: "Washer & Dryer Service",
+          image: "/Washer & Dryer Service.png",
+        },
+        {
+          id: 2,
+          heading: "Refrigerator Repair",
+          image: "/Refrigerator Repair.png",
+        },
+        {
+          id: 3,
+          heading: "Dishwasher Repair",
+          image: "/Dishwasher Repair.png",
+        },
+        {
+          id: 4,
+          heading: "Oven & Stove Service",
+          image: "/Oven & Stove Service.png",
+        },
+        {
+          id: 5,
+          heading: "Water Purifier Repair",
+          image: "/Water Purifier Repair.png",
+        },
+      ],
+    },
+  },
+  { index: 7, type: "Sliders2" },
+  {
+    index: 5,
+    type: "Sliders3",
+    data: {
+      slideHeading: "Painting Plumbing And Garden",
+      slideSubHeading: "Brighter And Greener Homes",
+      data: [
+        {
+          id: 1,
+          heading: "Interior & Exterior Painting",
+          image: "/Interior & Exterior Painting.png",
+        },
+        {
+          id: 2,
+          heading: "Garden & Landscaping",
+          image: "/Garden & Landscaping.png",
+        },
+        {
+          id: 3,
+          heading: "Drywall Repair & Finishing",
+          image: "/Drywall Repair & Finishing.png",
+        },
+        {
+          id: 4,
+          heading: "Plumbing Services",
+          image: "/Plumbing Services.png",
+        },
+        {
+          id: 5,
+          heading: "Doors and Windows Polishing",
+          image: "/Doors and Windows Polishing.png",
+        },
+      ],
+    },
+  },
+ // { index: 9, type: "Sliders2" },
+  {
+    index: 8,
     type: "Sliders1",
     data: {
       slideHeading: "Elevate your Home",
@@ -291,109 +479,7 @@ const data = [
       ],
     },
   },
-  { index: 4, type: "Sliders2" },
-  {
-    index: 5,
-    type: "Sliders3",
-    data: {
-      slideHeading: "Cleaning And Pest Control",
-      SlideSubHeading: "Clean Pestfree Homes.",
-      data: [
-        {
-          id: 1,
-          heading: "Deep Cleaning ",
-          image: "/Deep Cleaning.png",
-        },
-        {
-          id: 2,
-          heading: "General Pest Management",
-          image: "/General Pest Management.png",
-        },
-        {
-          id: 3,
-          heading: "Regular Housekeeping",
-          image: "/Regular Housekeeping.png",
-        },
-        {
-          id: 4,
-          heading: "Termite and Rodent Control ",
-          image: "/Termite and Rodent Control.png",
-        },
-      ],
-    },
-  },
-  {
-    index: 6,
-    type: "Sliders3",
-    data: {
-      slideHeading: "Appliance Repair And Service",
-      slideSubHeading: "Repair And Reuse",
-      data: [
-        {
-          id: 1,
-          heading: "Washer & Dryer Service",
-          image: "/Washer & Dryer Service.png",
-        },
-        {
-          id: 2,
-          heading: "Refrigerator Repair",
-          image: "/Refrigerator Repair.png",
-        },
-        {
-          id: 3,
-          heading: "Dishwasher Repair",
-          image: "/Dishwasher Repair.png",
-        },
-        {
-          id: 4,
-          heading: "Oven & Stove Service",
-          image: "/Oven & Stove Service.png",
-        },
-        {
-          id: 5,
-          heading: "Water Purifier Repair",
-          image: "/Water Purifier Repair.png",
-        },
-      ],
-    },
-  },
-  { index: 7, type: "Sliders2" },
-  {
-    index: 8,
-    type: "Sliders3",
-    data: {
-      slideHeading: "Painting Plumbing And Garden",
-      slideSubHeading: "Brighter And Greener Homes",
-      data: [
-        {
-          id: 1,
-          heading: "Interior & Exterior Painting",
-          image: "/Interior & Exterior Painting.png",
-        },
-        {
-          id: 2,
-          heading: "Garden & Landscaping",
-          image: "/Garden & Landscaping.png",
-        },
-        {
-          id: 3,
-          heading: "Drywall Repair & Finishing",
-          image: "/Drywall Repair & Finishing.png",
-        },
-        {
-          id: 4,
-          heading: "Plumbing Services",
-          image: "/Plumbing Services.png",
-        },
-        {
-          id: 5,
-          heading: "Doors and Windows Polishing",
-          image: "/Doors and Windows Polishing.png",
-        },
-      ],
-    },
-  },
-  // { index: 9, type: "Sliders2" },
+
   // {
   //   index: 10,
   //   type: "Sliders3",
