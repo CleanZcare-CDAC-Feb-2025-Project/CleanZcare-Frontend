@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-
 import {
   Disclosure,
   DisclosureButton,
@@ -11,14 +10,12 @@ import {
 } from "@headlessui/react";
 import {
   Bars3Icon,
-  BellIcon,
-  DocumentChartBarIcon,
   ShoppingCartIcon,
   XMarkIcon,
 } from "@heroicons/react/24/outline";
 import CitySearchDropdown from "./search";
 import LocationInput from "./locationInput";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom"; // ✅ added useLocation
 import { useSelector } from "react-redux";
 
 const navigation = [
@@ -26,13 +23,17 @@ const navigation = [
   { name: "Home", href: "home", current: false },
   { name: "ElderlyCare", href: "ElderlyCare", current: false },
 ];
+
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
 
 function Header() {
   const [navItem, setNavitem] = useState("");
-    const cartCount = useSelector((state) => state.cart.items.length);
+  const cartCount = useSelector((state) => state.cart.items.length);
+
+  const location = useLocation(); // ✅ get current route
+  const isProfessionalPage = location.pathname.startsWith("/professional"); // ✅ check route
 
   return (
     <Disclosure
@@ -41,8 +42,8 @@ function Header() {
     >
       <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
         <div className="relative flex h-16 items-center justify-between">
+          {/* Mobile menu button */}
           <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
-            {/* Mobile menu button*/}
             <DisclosureButton className="group relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:ring-2 focus:ring-white focus:outline-hidden focus:ring-inset">
               <span className="absolute -inset-0.5" />
               <span className="sr-only">Open main menu</span>
@@ -56,6 +57,8 @@ function Header() {
               />
             </DisclosureButton>
           </div>
+
+          {/* Logo + Navigation */}
           <div className="flex-1 items-center justify-center sm:items-stretch sm:justify-start sm:flex hidden">
             <div className="flex shrink-0 items-center">
               <img
@@ -64,43 +67,47 @@ function Header() {
                 className="h-14 w-auto rounded"
               />
             </div>
-            <div className="hidden sm:ml-6 sm:block">
-              <div className="flex space-x-4 align-middle ">
-                {navigation.map((item) => (
-                  <Link
-                    key={item.name}
-                    to={item.href}
-                    aria-current={item.current ? "page" : undefined}
-                    onClick={() => setNavitem(item.name)}
-                    className={classNames(
-                      navItem == item.name
-                        ? "border-b-4 border- text-black"
-                        : "text-gray-600 hover:text-gray-700 ",
-                      "rounded-sm px-3 py-2 text-sm font-medium"
-                    )}
-                  >
-                    {item.name}
-                  </Link>
-                ))}
+
+            {/* Hide nav items if professional page */}
+            {!isProfessionalPage && (
+              <div className="hidden sm:ml-6 sm:block">
+                <div className="flex space-x-4 align-middle ">
+                  {navigation.map((item) => (
+                    <Link
+                      key={item.name}
+                      to={item.href}
+                      aria-current={item.current ? "page" : undefined}
+                      onClick={() => setNavitem(item.name)}
+                      className={classNames(
+                        navItem === item.name
+                          ? "border-b-4 text-black"
+                          : "text-gray-600 hover:text-gray-700 ",
+                        "rounded-sm px-3 py-2 text-sm font-medium"
+                      )}
+                    >
+                      {item.name}
+                    </Link>
+                  ))}
+                </div>
               </div>
-            </div>
-          </div>
-          {/* search box */}
-          <div className="gap-3 items-center sm:flex hidden">
-            <LocationInput />
-            <CitySearchDropdown />
+            )}
           </div>
 
-          {/* left menu */}
+          {/* Search + Location */}
+          {!isProfessionalPage && (
+            <div className="gap-3 items-center sm:flex hidden">
+              <LocationInput />
+              <CitySearchDropdown />
+            </div>
+          )}
+
+          {/* Cart + Profile (always visible) */}
           <div className="absolute inset-y-0 right-0 items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0 flex">
             <button className="relative">
-              {/* Cart Icon */}
               <ShoppingCartIcon
                 className="size-6 text-gray-700"
                 aria-hidden="true"
               />
-
-              {/* Badge */}
               {cartCount > 0 && (
                 <span className="absolute -top-2 -right-2 bg-red-500 text-white text-xs rounded-full w-5 h-5 flex items-center justify-center">
                   {cartCount}
@@ -154,25 +161,28 @@ function Header() {
         </div>
       </div>
 
-      <DisclosurePanel className="sm:hidden">
-        <div className="space-y-1 px-2 pt-2 pb-3">
-          {navigation.map((item) => (
-            <Link
-              key={item.name}
-              to={item.href}
-              aria-current={item.current ? "page" : undefined}
-              className={classNames(
-                item.current
-                  ? "bg-gray-900 text-white"
-                  : "text-gray-300 hover:bg-gray-700 hover:text-white",
-                "block rounded-md px-3 py-2 text-base font-medium"
-              )}
-            >
-              {item.name}
-            </Link>
-          ))}
-        </div>
-      </DisclosurePanel>
+      {/* Mobile nav menu */}
+      {!isProfessionalPage && (
+        <DisclosurePanel className="sm:hidden">
+          <div className="space-y-1 px-2 pt-2 pb-3">
+            {navigation.map((item) => (
+              <Link
+                key={item.name}
+                to={item.href}
+                aria-current={item.current ? "page" : undefined}
+                className={classNames(
+                  item.current
+                    ? "bg-gray-900 text-white"
+                    : "text-gray-300 hover:bg-gray-700 hover:text-white",
+                  "block rounded-md px-3 py-2 text-base font-medium"
+                )}
+              >
+                {item.name}
+              </Link>
+            ))}
+          </div>
+        </DisclosurePanel>
+      )}
     </Disclosure>
   );
 }

@@ -217,14 +217,14 @@ const Sidebar = ({ role }) => {
             </Link>
           </li>
         }
-         {
+         {/* {
           role=="professional" &&
           <li className="flex items-center gap-3">
             <Link to="/professional/feedback" className="flex items-center gap-3">
               < PencilSquareIcon className="w-6 h-6 text-black-600" />Feedback
             </Link>
           </li>
-        }
+        } */}
          
 
 

@@ -21,7 +21,6 @@ import ProfessionalLandingPage from "./pages/professional/ProfessionalLandingPag
 import IncomePage from "./pages/professional/IncomePage.jsx";
 import Appointments from "./pages/professional/Appointments.jsx";
 import Customers from "./pages/professional/Customers.jsx";
-import Feedback from "./pages/professional/Feedback.jsx";
 import ElderlyCare from './pages/ElderlyCare.jsx';
 import Login from "./pages/Login.jsx";
 import Signup from "./pages/Signup.jsx";
@@ -58,7 +57,7 @@ function App() {
           <Route path ="income" element ={<IncomePage/>}/>
           <Route path="booking" element={<Appointments />} />
            <Route path="customer" element={<Customers />} />
-            <Route path="feedback" element={<Feedback />} />
+            
         </Route>
       </Routes>
 
