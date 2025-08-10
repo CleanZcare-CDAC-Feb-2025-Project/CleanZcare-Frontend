@@ -161,6 +161,33 @@ const data = [
           rating: 3.79,
           currency: "INR",
         },
+        {
+          id: 6,
+          image: "/Pest_Control.png",
+          title: "Pest Control",
+          reviews: "106k",
+          price: 1098,
+          rating: 3.79,
+          currency: "INR",
+        },
+        {
+          id: 7,
+          image: "/Plumbing_Services.png",
+          title: "Plumbing Services",
+          reviews: "106k",
+          price: 1098,
+          rating: 3.79,
+          currency: "INR",
+        },
+        {
+          id: 8,
+          image: "/Sofa&Carpet Cleaning.png",
+          title: "Sofa & Carpet Cleaning",
+          reviews: "106k",
+          price: 1098,
+          rating: 3.79,
+          currency: "INR",
+        },
         
         
       ],
