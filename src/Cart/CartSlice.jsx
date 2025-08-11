@@ -6,13 +6,22 @@ const initialState = {
   deliveryCharge: 50,
   taxRate: 0.18,
   tax: 0,
+  isAvoidCollin: false,
   discountamt: 0,
   discount: {
+    coupan_id: 1,
+    code: "",
     minAmt: 0,
     flatAmt: 0,
     isApplied: false,
   },
   total: 0,
+  tip: 0,
+  customerId: 1,
+  slot: {
+    time: "",
+    date: "",
+  },
 };
 
 function recalculateDiscount(state) {
@@ -25,12 +34,12 @@ function recalculateDiscount(state) {
     state.discountamt = parseInt(state.subtotal); // No discount
   }
 }
-function recalculateTotal(state){
+function recalculateTotal(state) {
   const tax = state.discountamt * state.taxRate;
-      state.tax = parseFloat(tax.toFixed(2)); // Optional: store tax separately
-      state.total = parseFloat(
-        (state.discountamt + state.deliveryCharge + tax).toFixed(2)
-      );
+  state.tax = parseFloat(tax.toFixed(2)); // Optional: store tax separately
+  state.total = parseFloat(
+    (state.discountamt + state.deliveryCharge + tax).toFixed(2)
+  );
 }
 
 const CartSlice = createSlice({
@@ -59,7 +68,7 @@ const CartSlice = createSlice({
         item.quantity += 1;
         state.subtotal = parseInt(state.subtotal) + parseInt(item.price);
         recalculateDiscount(state);
-         recalculateTotal(state);
+        recalculateTotal(state);
       }
     },
 
@@ -85,14 +94,15 @@ const CartSlice = createSlice({
     applyDiscount: (state, action) => {
       state.discount.flatAmt = action.payload.discamt;
       state.discount.minAmt = action.payload.minamt;
-
+      state.discount.id = action.payload.id;
+      state.discount.code = action.payload.code;
       recalculateDiscount(state);
       state.discount.isApplied = true;
     },
     removeDiscount: (state) => {
       state.discount.flatAmt = 0;
       state.discount.minAmt = 0;
-
+      state.discount.code = "";
       recalculateDiscount(state);
       state.discount.isApplied = false;
     },
@@ -108,13 +118,47 @@ const CartSlice = createSlice({
     },
     clearCart: (state) => {
       state.items = [];
+      (state.subtotal = 0),
+        (state.deliveryCharge = 50),
+        (state.taxRate = 0.18),
+        (state.tax = 0),
+        (state.isAvoidCollin = false),
+        (state.discountamt = 0),
+        (state.discount = {
+          coupan_id: 1,
+          code: "",
+          minAmt: 0,
+          flatAmt: 0,
+          isApplied: false,
+        }),
+        (state.total = 0),
+        (state.tip = 0),
+        (state.customerId = 1),
+        (state.slot = {
+          time: "",
+          date: "",
+        });
     },
     calculateTotal: (state) => {
       recalculateTotal(state);
     },
+    avoidColling(state) {
+      state.isAvoidCollin = !state.isAvoidCollin;
+    },
+    applyTip(state, action) {
+      state.tip = action.payload;
+    },
+    addSlot(state, action) {
+      (state.slot.date = action.payload.date),
+        (state.slot.time = action.payload.time);
+      console.log(action.payload);
+    },
   },
 });
 export const {
+  addSlot,
+  applyTip,
+  avoidColling,
   addItem,
   updateItem,
   deleteItem,
@@ -123,7 +167,7 @@ export const {
   decrementQuantity,
   applyDiscount,
   removeDiscount,
-  calculateTotal
+  calculateTotal,
 } = CartSlice.actions;
 
 export default CartSlice.reducer;

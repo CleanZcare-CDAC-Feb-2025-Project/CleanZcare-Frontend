@@ -2,6 +2,9 @@ import { MapPinIcon } from "@heroicons/react/24/solid";
 import React, { useEffect, useState } from "react";
 import Clock from "../Icons/Clock.jsx";
 import SlotModal from "../Modals/slotModal.jsx";
+import { useSelector } from "react-redux";
+import { PlaceOrder } from "../../Service/cartService.jsx";
+import { toast } from "sonner";
 const weekSlots = [
   {
     day: "Sat",
@@ -256,27 +259,58 @@ const timeslot = [
 ];
 
 const BookingCard = ({ data }) => {
+  const selectedTime = useSelector((state) => state.cart.slot.time);
+  const selectedDate = useSelector((state) => state.cart.slot.date);
   const [step, setStep] = useState(1);
   const [showSlots, setShowSlots] = useState(false);
   const [address, setAddress] = useState(data.address);
-  const [time, setTime] = useState("");
-  const [date, setDate] = useState("");
+  const [time, setTime] = useState(selectedTime);
+  const [date, setDate] = useState(selectedDate);
+
+  const orderline = useSelector((state) => state.cart.items);
+  const taxRate = useSelector((state) => state.cart.taxRate);
+  const tip = useSelector((state) => state.cart.tip);
+  const coupanCode = useSelector((state) => state.cart.discount.code);
+  const isAvoidColling = useSelector((state) => state.cart.isAvoidCollin);
+  const orderDate = useSelector((state) => state.cart.slot.date);
+  const orderTime = useSelector((state) => state.cart.slot.time);
+ const originalPrice=useSelector(state=>state.cart.subtotal);
+  const handelCart = async () => {
+  //  const handelCart = async () => {
+  const payload = {
+    orderline,
+    address,
+    taxRate,
+    tip,
+    coupanCode,
+    isAvoidColling,
+    customerId: 1,
+    orderDate,
+    orderTime,
+    originalPrice,
+  };
+
+  await PlaceOrder(payload); // don't await here
+
+};
+
+  useEffect(() => {
+    if (selectedTime) setTime(selectedTime);
+    if (selectedDate) setDate(selectedDate);
+  }, [selectedTime, selectedDate]);
 
   useEffect(() => {
     setAddress(data.address);
   }, [data]);
 
-  function changedate(newDate) {
-    setDate(newDate);
-    setTime("");
-  }
-
   function ManipulateDate(newTime) {
-    setTime(newTime);
     if (newTime && date) {
       setStep(3); // move to Payment step when slot is selected
     }
   }
+const handleDateChange = (newDate) => {
+  setDate(newDate);
+};
 
   const handleAddressConfirmed = () => {
     if (address?.trim()) setStep(2);
@@ -353,7 +387,7 @@ const BookingCard = ({ data }) => {
           <SlotModal
             timeslot={timeslot}
             weekSlots={weekSlots}
-            changedate={changedate}
+            changedate={handleDateChange}
             setime={ManipulateDate}
             handleClose={() => setShowSlots(false)}
             date={date}
@@ -371,7 +405,7 @@ const BookingCard = ({ data }) => {
         <h3 className="text-lg font-semibold">💳 Payment Method</h3>
         <button
           className="w-full px-4 py-2 bg-purple-600 text-white rounded hover:bg-purple-700"
-          onClick={() => alert("Proceeding to payment...")}
+          onClick={() => handelCart()}
         >
           Proceed to Payment
         </button>

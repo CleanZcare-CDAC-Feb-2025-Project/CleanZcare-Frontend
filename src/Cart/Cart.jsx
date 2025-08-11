@@ -3,10 +3,11 @@ import { Sliders2 } from "../components/Sliders2";
 import Carousel from "../components/Carausals/Carousel";
 import ServiceCard from "../components/Cards/ServiceCard";
 import CartCard from "../components/Cards/CartCard";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { CheckIcon } from "@heroicons/react/24/outline";
 import Promise from "../components/Cards/Promise";
 import OfferCard from "../components/Cards/Offer";
+import { getServiceGroupData } from "../Service/pageData";
 const data = {
   title: "Native Smart Locks",
   rating: 4.86,
@@ -122,64 +123,64 @@ const filesStatData = [
   //   // percentage: 94,
   // },
 ];
-const detailData = [
-  {
-    id: 1,
-    title: "Lock pro",
-    image: "",
-    data: [
-      {
-        id: 1,
-        title: "Native Lock Pro",
-        rating: 4.9,
-        totalReviews: "5k",
-        price: "16499",
-        discription: [
-          "7 ways to unlock",
-          "Unlock request with visitor photo on every doorbell press",
-        ],
-        options: 2,
-      },
-    ],
-  },
-  {
-    id: 2,
-    title: "Lock S",
-    image: "",
-    data: [
-      {
-        id: 2,
-        title: "Native Lock S",
-        rating: 4.83,
-        totalReviews: "733",
-        price: "6999",
-        // details:"",
-        discription: ["5 ways to unlock", "Install on any door & go keyless"],
-        options: 0,
-      },
-    ],
-  },
-  {
-    id: 3,
-    title: "Video demo",
-    image: "image1.png",
-    data: [
-      {
-        id: 3,
-        title: "Video demo",
-        // rating: 4.83,
-        // totalReviews:"733",
-        price: "9",
-        details: "15 mins",
-        discription: [
-          "Get a personalised video demo from an expert",
-          "Ask experts your questiond and clear all doubts!",
-        ],
-        options: 0,
-      },
-    ],
-  },
-];
+// const detailData = [
+//   {
+//     id: 1,
+//     title: "Lock pro",
+//     image: "",
+//     data: [
+//       {
+//         id: 1,
+//         title: "Native Lock Pro",
+//         rating: 4.9,
+//         totalReviews: "5k",
+//         price: "16499",
+//         discription: [
+//           "7 ways to unlock",
+//           "Unlock request with visitor photo on every doorbell press",
+//         ],
+//         options: 2,
+//       },
+//     ],
+//   },
+//   {
+//     id: 2,
+//     title: "Lock S",
+//     image: "",
+//     data: [
+//       {
+//         id: 2,
+//         title: "Native Lock S",
+//         rating: 4.83,
+//         totalReviews: "733",
+//         price: "6999",
+//         // details:"",
+//         discription: ["5 ways to unlock", "Install on any door & go keyless"],
+//         options: 0,
+//       },
+//     ],
+//   },
+//   {
+//     id: 3,
+//     title: "Video demo",
+//     image: "image1.png",
+//     data: [
+//       {
+//         id: 3,
+//         title: "Video demo",
+//         // rating: 4.83,
+//         // totalReviews:"733",
+//         price: "9",
+//         details: "15 mins",
+//         discription: [
+//           "Get a personalised video demo from an expert",
+//           "Ask experts your questiond and clear all doubts!",
+//         ],
+//         options: 0,
+//       },
+//     ],
+//   },
+// ];
 const cartData = [
   {
     id: 1,
@@ -198,6 +199,7 @@ const cartData = [
 const offerData = [
   {
     id: 1,
+    code:"NATIVE300",
     title: "Flat Rs 300 off",
     subTitle: "Applicable on all models",
     discription: "SAVE 300 ON THIS ORDER",
@@ -221,8 +223,18 @@ const offerData = [
 ];
 export const Cart = () => {
   const location = useLocation();
+  
   const queryParams = new URLSearchParams(location.search);
   const category = queryParams.get("category");
+  const [detailData,setDetailData]=useState([]);
+  useEffect(()=>{
+    async function fun(){
+
+      const data=await getServiceGroupData(category);
+      setDetailData(data);
+    } 
+    fun();
+  },[]);
   
 
   return (
@@ -260,15 +272,15 @@ export const Cart = () => {
             </div>
             <div className="border border-gray-300 w-full rounded-2xl p-3 flex flex-col gap-4">
               <p className="font-medium text-gray-500">Select a service</p>
-              <div className="flex gap-3">
-                {data.services.map((value, key) => (
+              <div className="flex gap-3 flex-wrap">
+                {detailData.map((value, key) => (
                   <div className="w-20">
                     <div onClick={() => setShowModal(true)}>
                       <img className="rounded-lg" src="/image1.png" alt="" />
                     </div>
                     <div className="py-1  flex justify-around">
                       <p className="mb-2 text-xs  text-gray-900">
-                        {data.title}
+                        {value.title}
                       </p>
                     </div>
                   </div>
@@ -292,7 +304,7 @@ export const Cart = () => {
               {detailData?.map((value, key) => (
                 <div className=" p-3 rounded-s">
                   <div className="p-2 text-2xl font-bold"> {value.title}</div>
-                  {value?.data?.map((data, key) => (
+                  {value?.services?.map((data, key) => (
                     <>
                     <ServiceCard data={data} key={key} />
                     <div className="border-2 border-gray-500"></div>
